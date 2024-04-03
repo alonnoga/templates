@@ -3,7 +3,8 @@ deploy:
   steps:
     setupVariables:
       after:
-        - name: Cool Step from custom flow c  
-          run: echo custom flow c
+        - name: Cool Step from custom flow c2
+          run: echo custom flow c2
           env:
             FOO: FA
+
