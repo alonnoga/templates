@@ -1,0 +1,9 @@
+version: 2
+deploy:
+  steps:
+    setupVariables:
+      after:
+        - name: Cool Step from custom flow c  
+          run: echo custom flow c
+          env:
+            FOO: FA
