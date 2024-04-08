@@ -4,6 +4,6 @@ deploy:
     setupVariables:
       after:
         - name: Cool Step  
-          run: echo custom flow 1
+          run: pwd
           env:
             FOO: bar
