@@ -1,9 +1,8 @@
-version: 2
+version: 1
 deploy:
   steps:
     setupVariables:
       after:
-        - name: Cool Step from custom flow b  
-          run: echo custom flow b
-          env:
-            FOO: FOO
+        - pwd
+        - cd ..
+        - pwd
