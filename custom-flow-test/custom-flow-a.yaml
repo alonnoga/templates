@@ -7,3 +7,11 @@ deploy:
           run: pwd
           env:
             FOO: bar
+        - name: Cool Step 2 
+          run: cd ..
+          env:
+            FOO: bar
+        - name: Cool Step 3 
+          run: pwd
+          env:
+            FOO: bar
