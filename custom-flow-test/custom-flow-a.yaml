@@ -8,9 +8,9 @@ deploy:
           env:
             FOO: bar
         - name: Cool Step 2 
-          run: 
-            - cd ..
-            - pwd
+          run: |
+            cd ..
+            pwd
           env:
             FOO: bar
         - name: Cool Step 3 
