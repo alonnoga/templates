@@ -1,0 +1,9 @@
+version: 2
+deploy:
+  steps:
+    setupVariables:
+      after:
+        - name: print curret workdir  
+          run: pwd
+          env:
+            FOO: bar
