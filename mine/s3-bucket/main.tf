@@ -3,6 +3,10 @@ provider "aws" {
   region  = "us-east-1"
 }
 
-resource "aws_s3_bucket" "example" {
-  bucket = "alon-tf-bucket"
+resource "aws_s3_bucket" "one" {
+  bucket = "alon-demo-bucket"
+}
+
+resource "aws_s3_bucket" "two" {
+  bucket = "alon-demo-bucket-2"
 }
