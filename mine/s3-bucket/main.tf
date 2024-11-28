@@ -3,10 +3,11 @@ provider "aws" {
   region  = "us-east-1"
 }
 
-resource "aws_s3_bucket" "one" {
-  bucket = "alon-demo-bucket"
+import {
+  to = aws_s3_bucket.one
+  id = "alon-demo-bucket"
 }
 
-resource "aws_s3_bucket" "two" {
-  bucket = "alon-demo-bucket-2"
+resource "aws_s3_bucket" "one" {
+  bucket = "alon-demo-bucket"
 }
