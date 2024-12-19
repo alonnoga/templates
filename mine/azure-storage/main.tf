@@ -12,7 +12,7 @@ resource "random_string" "suffix" {
 
 # Define the resource group
 resource "azurerm_resource_group" "example" {
-  name     = "alonResourceGroup${random_string.suffix.result}"
+  name     = "alonresourcegroup${random_string.suffix.result}"
   location = "EastUS"
 }
 
