@@ -2,6 +2,6 @@ version: 1
 
 deploy:
   steps:
-    setupVariables:
+    terraformPlan:
       after:
         - sleep ${SLEEP_IN_SECONDS:-60}
